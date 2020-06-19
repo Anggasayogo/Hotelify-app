@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import { StyleSheet, Text, View, Image } from 'react-native'
 import {IcLogo } from '../../assets';
+import { fonts } from '../../utils';
 
 const Splash = ({navigation}) => {
     useEffect(()=>{
@@ -25,7 +26,8 @@ const styles = StyleSheet.create({
     },
     title: {
         fontSize: 20,
-        marginTop: 20
+        marginTop: 20,
+        fontFamily: fonts.primary[600],
     },
     page:{
         flex: 1,
