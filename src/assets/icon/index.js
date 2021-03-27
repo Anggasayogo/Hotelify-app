@@ -7,6 +7,7 @@ import IcNotifDis from './disable-bell.svg';
 import IcProfileAc from './active-user.svg';
 import IcProfileDis from './disable-user.svg';
 import IcLogo from './location.png';
+import Ilserch from './search.svg';
 
 export {
     IcHomeDis,
@@ -18,4 +19,5 @@ export {
     IcProfileAc,
     IcProfileDis,
     IcLogo,
+    Ilserch,
 }

@@ -1,11 +1,13 @@
 import React from 'react'
-import { StyleSheet, Text, View, ImageBackground, ScrollView } from 'react-native'
+import { StyleSheet, Text, View, ImageBackground, ScrollView, StatusBar } from 'react-native'
 import {Ilbg, IlDubai, IlHollywod} from '../../assets';
 import {Buttons, Input, CardImage, Gap, SelOpt} from '../../component';
 import { fonts, colors } from '../../utils';
 
 const Home = () => {
     return (
+        <>
+        <StatusBar translucent backgroundColor="transparent"/>
         <ScrollView style={styles.pages} showsVerticalScrollIndicator={false}>
             <ImageBackground source={Ilbg} style={styles.bg}>
                 <Text style={styles.title}>Find a Perfect place to stay</Text>
@@ -16,7 +18,7 @@ const Home = () => {
                     <View style={{flex: 1,marginRight: 5}}>
                         <Input label="Place"/>
                     </View>
-                    <View>
+                    <View style={{width: 76}}>
                         <SelOpt/>
                     </View>
                 </View>
@@ -25,7 +27,7 @@ const Home = () => {
                     <View style={{flex: 1,marginRight: 5}}>
                         <Input label="Date"/>
                     </View>
-                    <View>
+                    <View style={{width: 76}}>
                         <SelOpt/>
                     </View>
                 </View>
@@ -44,6 +46,7 @@ const Home = () => {
                 </ScrollView>
             </View>
         </ScrollView>
+        </>
     )
 }
 
